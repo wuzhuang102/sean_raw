@@ -1,0 +1,20 @@
+{
+  "name": "local-demo",
+  "interface": {
+    "displayName": "Local Demo Plugins"
+  },
+  "plugins": [
+    {
+      "name": "latest-research",
+      "source": {
+        "source": "local",
+        "path": "./plugins/latest-research"
+      },
+      "policy": {
+        "installation": "INSTALLED_BY_DEFAULT",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

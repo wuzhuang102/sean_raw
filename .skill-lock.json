@@ -1,0 +1,34 @@
+{
+  "version": 3,
+  "skills": {
+    "karpathy-llm-wiki": {
+      "source": "Astro-Han/karpathy-llm-wiki",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/Astro-Han/karpathy-llm-wiki.git",
+      "skillPath": "SKILL.md",
+      "skillFolderHash": "",
+      "installedAt": "2026-05-15T10:07:11.401Z",
+      "updatedAt": "2026-05-15T10:07:11.401Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode"
+  ],
+  "knownDefaultAgents": [
+    "trae",
+    "trae-solo",
+    "trae-cn",
+    "trae-cli",
+    "coco"
+  ]
+}
