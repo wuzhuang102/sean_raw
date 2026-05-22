@@ -4,8 +4,8 @@
 
 ### 2026-05-22 | reading-note | FDE——AI 时代的职业转型已经打响？
 - raw: `wiki/_raw/sources/fde-ai-career-transition.md`
-- pages: `reading-notes/work/index.md`, `reading-notes/index.md`, `index.md`, `log.md`
-- notes: 读取飞书 Wiki 文章，按职业转型和岗位形态归入 Work 阅读笔记，并补齐 reading-notes 分类入口。
+- pages: `reading-notes/work.md`, `reading-notes/index.md`, `index.md`, `log.md`
+- notes: 读取飞书 Wiki 文章，按职业转型和岗位形态归入 Work 阅读笔记，并将 reading-notes 分类入口迁移为扁平 markdown 文件。
 
 ### 2026-05-22 | maintain | Sean raw wiki maintenance rules
 - raw: none

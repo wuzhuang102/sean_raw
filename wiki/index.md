@@ -13,9 +13,9 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working knowledge 
 # Reading Notes
 
 - [Reading Notes Index](reading-notes/index.md) - 轻量阅读记录总入口。
-- [Technology](reading-notes/technology/index.md) - engineering, AI, architecture, tools, technical papers, and implementation writeups.
-- [Work](reading-notes/work/index.md) - management, collaboration, retrospectives, organizational process, and career material.
-- [Product](reading-notes/product/index.md) - product design, UX, growth, requirements, and user research.
-- [Business](reading-notes/business/index.md) - companies, industries, commercial models, markets, and strategy.
-- [Personal](reading-notes/personal/index.md) - personal growth, learning systems, life systems, and non-work methods.
-- [Misc](reading-notes/misc/index.md) - material that does not yet have a stable home.
+- [Technology](reading-notes/technology.md) - engineering, AI, architecture, tools, technical papers, and implementation writeups.
+- [Work](reading-notes/work.md) - management, collaboration, retrospectives, organizational process, and career material.
+- [Product](reading-notes/product.md) - product design, UX, growth, requirements, and user research.
+- [Business](reading-notes/business.md) - companies, industries, commercial models, markets, and strategy.
+- [Personal](reading-notes/personal.md) - personal growth, learning systems, life systems, and non-work methods.
+- [Misc](reading-notes/misc.md) - material that does not yet have a stable home.
