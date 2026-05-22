@@ -66,7 +66,7 @@ For detailed filing rules, read `references/wiki-taxonomy.md`.
 
 ## Page Conventions
 
-Use concise YAML frontmatter on generated markdown pages. Do not add a standalone level-1 heading as the page title; the readable page title lives in the filename. Start the body directly with the useful content, normally at `##` or lower. Do not duplicate the filename as a `title` field unless a downstream integration explicitly requires it.
+Use concise YAML frontmatter on generated markdown pages. The readable page title is derived from the filename or index entry, so do not add a separate level-1 heading just to repeat the page title. Start the generated body at level-1 headings for real content sections (`# Section`), then use `##`, `###`, and lower levels for subsections. Do not duplicate the filename as a `title` field unless a downstream integration explicitly requires it.
 
 ```yaml
 ---
@@ -80,9 +80,9 @@ tags: []
 ---
 ```
 
-Prefer stable, readable filenames: lowercase words separated by hyphens for English, or clear Chinese names when Chinese better matches the material. Keep one major concept per page. Use wiki links or normal relative markdown links consistently with the surrounding wiki. Add a `## Sources` section when a page aggregates claims from multiple raw files.
+Prefer stable, readable filenames: lowercase words separated by hyphens for English, or clear Chinese names when Chinese better matches the material. Keep one major concept per page. Use wiki links or normal relative markdown links consistently with the surrounding wiki. Add a `# Sources` section when a page aggregates claims from multiple raw files.
 
-When claims conflict, mark affected pages `status: contested`, add a short `## Contested Claims` section, and log the conflict in `meta/contradictions.md`. Do not silently choose a winner unless the user gives a rule.
+When claims conflict, mark affected pages `status: contested`, add a short `# Contested Claims` section, and log the conflict in `meta/contradictions.md`. Do not silently choose a winner unless the user gives a rule.
 
 ## Workflows
 

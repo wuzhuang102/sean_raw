@@ -29,7 +29,7 @@ If a page could live in several places, put it where a reader would first look a
 
 ## Link Patterns
 
-- Topic, pattern, playbook, decision, project, and comparison pages should cite raw sources or stable references in a `## Sources` section.
+- Topic, pattern, playbook, decision, project, and comparison pages should cite raw sources or stable references in a `# Sources` section.
 - Map pages should link to the pages a reader or LLM should open first.
 - Playbooks should link to the patterns and topics that explain the underlying mechanisms.
 - Decisions should link to comparisons, project context, and raw evidence.
