@@ -10,7 +10,7 @@ tags: ["docker", "container", "image", "compose", "infra"]
 
 这页不是按 Docker CLI 字母表整理，而是按真实使用顺序组织：先理解镜像和容器，再学会运行、查看、进入、挂载、联网，最后用 Dockerfile 和 Compose 把流程固化。
 
-## 先建立地图
+# 先建立地图
 
 Docker 日常工作可以压缩成一条链路：
 
@@ -31,11 +31,11 @@ docker rm app
 
 如果只记一件事：镜像是模板，容器是运行实例。你构建、拉取、打标签的是镜像；你启动、停止、看日志、进入 shell 的是容器。
 
-## 1. 镜像：拿到可运行模板
+# 1. 镜像：拿到可运行模板
 
 镜像包含应用、依赖、运行时和默认启动配置。镜像可以从 registry 拉取，也可以从 Dockerfile 构建。
 
-### 常用命令
+## 常用命令
 
 | 任务 | 命令 |
 | --- | --- |
@@ -47,7 +47,7 @@ docker rm app
 | 删除镜像 | `docker rmi nginx:latest` |
 | 清理悬空镜像 | `docker image prune` |
 
-### 镜像名怎么读
+## 镜像名怎么读
 
 ```text
 [HOST[:PORT]/]NAMESPACE/REPOSITORY[:TAG]
@@ -64,7 +64,7 @@ registry.example.com/team/my-app:2026-05-22
 
 省略 registry、namespace、tag 时，Docker 通常会按 Docker Hub、`library` 命名空间、`latest` tag 处理。生产环境尽量显式写 tag，因为 `latest` 只是一个普通标签，不等于稳定或最新保证。
 
-## 2. 容器：把镜像跑起来
+# 2. 容器：把镜像跑起来
 
 `docker run` 是最常见也最容易写长的命令。它的基本形状是：
 
@@ -72,7 +72,7 @@ registry.example.com/team/my-app:2026-05-22
 docker run [OPTIONS] IMAGE[:TAG|@DIGEST] [COMMAND] [ARG...]
 ```
 
-### 从简单到常用
+## 从简单到常用
 
 ```bash
 # 前台运行
@@ -97,7 +97,7 @@ docker run -e NODE_ENV=production --env-file .env my-app:1.0.0
 docker run --rm -v "$PWD":/app -w /app node:22-alpine npm test
 ```
 
-### 高频参数速查
+## 高频参数速查
 
 | 参数 | 作用 | 常见场景 |
 | --- | --- | --- |
@@ -113,7 +113,7 @@ docker run --rm -v "$PWD":/app -w /app node:22-alpine npm test
 | `--network app-net` | 加入网络 | 多容器互相访问 |
 | `--restart unless-stopped` | 设置重启策略 | 长期运行的服务 |
 
-## 3. 查看、进入和控制容器
+# 3. 查看、进入和控制容器
 
 容器启动后，排查问题通常按这个顺序走：先看状态，再看日志，再进入容器，最后 inspect 配置。
 
@@ -132,7 +132,7 @@ docker rm web
 docker rm -f web
 ```
 
-### 什么时候用哪个命令
+## 什么时候用哪个命令
 
 | 问题 | 命令 | 判断点 |
 | --- | --- | --- |
@@ -146,7 +146,7 @@ docker rm -f web
 
 基础镜像里不一定有 `bash`，进入失败时先试 `sh`。
 
-## 4. Dockerfile：把构建过程写下来
+# 4. Dockerfile：把构建过程写下来
 
 Dockerfile 用来描述镜像如何生成。一个最小的 Node 服务镜像大致长这样：
 
@@ -161,7 +161,7 @@ EXPOSE 3000
 CMD ["node", "server.js"]
 ```
 
-### 指令分层理解
+## 指令分层理解
 
 | 层次 | 指令 | 作用 |
 | --- | --- | --- |
@@ -175,7 +175,7 @@ CMD ["node", "server.js"]
 | 权限 | `USER` | 切换运行用户，减少 root 运行风险 |
 | 健康 | `HEALTHCHECK` | 声明健康检查 |
 
-### 构建命令
+## 构建命令
 
 ```bash
 docker build -t my-app:1.0.0 .
@@ -185,11 +185,11 @@ docker build --build-arg NODE_ENV=production -t my-app:prod .
 
 `.` 是 build context，`COPY` 只能访问 context 内的文件。配合 `.dockerignore` 排除 `node_modules`、日志、临时文件、密钥和本地构建产物，可以让镜像更小，也减少泄漏风险。
 
-## 5. 存储：区分临时文件和长期数据
+# 5. 存储：区分临时文件和长期数据
 
 容器自己的 writable layer 会随着容器删除而丢失。只要数据需要留下来，就应该显式挂载。
 
-### 三种常见选择
+## 三种常见选择
 
 | 类型 | 语法 | 适合场景 |
 | --- | --- | --- |
@@ -197,7 +197,7 @@ docker build --build-arg NODE_ENV=production -t my-app:prod .
 | bind mount | `-v "$PWD":/app` | 本地开发时代码同步 |
 | tmpfs | `--tmpfs /tmp` | 临时敏感数据或缓存 |
 
-### volume 命令
+## volume 命令
 
 ```bash
 docker volume create app-data
@@ -206,7 +206,7 @@ docker volume inspect app-data
 docker volume rm app-data
 ```
 
-### 挂载示例
+## 挂载示例
 
 ```bash
 # 数据库数据持久化
@@ -219,7 +219,7 @@ docker run -d --name web --mount type=volume,source=app-data,target=/app/data ng
 docker run --rm -it -v "$PWD":/app -w /app node:22-alpine npm test
 ```
 
-## 6. 网络和端口：容器之间、本机和外界
+# 6. 网络和端口：容器之间、本机和外界
 
 端口映射解决“宿主机访问容器”的问题；Docker network 解决“容器之间互相访问”的问题。
 
@@ -234,7 +234,7 @@ docker network rm app-net
 
 同一个自定义网络内，容器通常可以用容器名互相访问。例如 API 容器可以连接 `redis:6379`。`-p 8080:8080` 则是把容器端口发布到宿主机，让你能从本机访问服务。
 
-## 7. Compose：把多容器应用写成配置
+# 7. Compose：把多容器应用写成配置
 
 当应用需要数据库、缓存、队列等多个容器时，用 `docker compose` 比手写一串 `docker run` 更稳定。
 
@@ -272,7 +272,7 @@ docker compose down -v
 
 `docker compose down` 默认删除 Compose 创建的容器和网络，但保留 named volumes。`docker compose down -v` 会删除 volumes，可能清掉数据库数据。
 
-## 8. 清理：先看占用，再动手删
+# 8. 清理：先看占用，再动手删
 
 ```bash
 docker system df
@@ -290,22 +290,22 @@ docker system prune
 2. 只清明确不需要的资源，例如停止的容器或悬空镜像。
 3. 谨慎使用带 `-a` 或 `-v` 的清理命令，因为影响范围更大。
 
-## 常见工作流
+# 常见工作流
 
-### 本地开发一个 Web 服务
+## 本地开发一个 Web 服务
 
 ```bash
 docker build -t my-app:dev .
 docker run --rm -it -p 3000:3000 -v "$PWD":/app -w /app my-app:dev npm run dev
 ```
 
-### 临时开一个干净环境
+## 临时开一个干净环境
 
 ```bash
 docker run --rm -it alpine:latest sh
 ```
 
-### 排查容器启动失败
+## 排查容器启动失败
 
 ```bash
 docker ps -a
@@ -316,7 +316,7 @@ docker exec -it <container> sh
 
 如果容器已经退出，`docker exec` 不能进入；先看 `docker logs` 和 `docker inspect`。
 
-### 构建并发布镜像
+## 构建并发布镜像
 
 ```bash
 docker build -t my-app:1.0.0 .
@@ -324,7 +324,7 @@ docker tag my-app:1.0.0 registry.example.com/team/my-app:1.0.0
 docker push registry.example.com/team/my-app:1.0.0
 ```
 
-## 易错点
+# 易错点
 
 | 易错点 | 正确认知 |
 | --- | --- |
@@ -336,7 +336,7 @@ docker push registry.example.com/team/my-app:1.0.0
 | `CMD` 和 `ENTRYPOINT` 一样 | `CMD` 更像默认参数或默认命令，`ENTRYPOINT` 更像固定入口 |
 | `docker compose down -v` 很安全 | 它会删除 volumes，可能删除数据库数据 |
 
-## Sources
+# Sources
 
 - [Docker run containers](https://docs.docker.com/engine/containers/run/)
 - [Dockerfile overview](https://docs.docker.com/build/concepts/dockerfile/)
