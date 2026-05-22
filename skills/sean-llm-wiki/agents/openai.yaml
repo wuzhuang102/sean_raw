@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sean LLM Wiki"
+  short_description: "Maintain a full-stack LLM-written engineering wiki"
+  default_prompt: "Use $sean-llm-wiki to ingest raw sources, maintain maps/topics/patterns/playbooks/decisions/projects under wiki/, and export a single HTML view."

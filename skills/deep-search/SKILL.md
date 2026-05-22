@@ -7,6 +7,7 @@ description: >-
   X used", architecture mapping, impact analysis, or anything requiring exhaustive
   repo exploration beyond a quick lookup. Do not use for single known file paths,
   trivial one-line greps, or tasks that only need web/docs search.
+disable-model-invocation: true
 ---
 
 # Deep Search
