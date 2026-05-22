@@ -1,8 +1,11 @@
-# Wiki Log
-
 # 2026
 
 ## 2026-05
+
+### 2026-05-22 | maintain | Filename-based page titles
+- raw: `wiki/_raw/infra/docker-basic-syntax-sources.md`
+- pages: `index.md`, `topics/infra/docker-basic-syntax.md`, `log.md`
+- notes: 移除现存 wiki 页面中仅作为文件标题的一级标题和重复 `title` frontmatter，改为由文件名承载页面标题。
 
 ### 2026-05-22 | maintain | Raw source directory taxonomy
 - raw: `wiki/_raw/infra/docker-basic-syntax-sources.md`

@@ -1,5 +1,4 @@
 ---
-title: "Docker 常用基础语法"
 type: "topic"
 status: "active"
 created: "2026-05-22"
@@ -8,8 +7,6 @@ sources:
   - "../../_raw/infra/docker-basic-syntax-sources.md"
 tags: ["docker", "container", "image", "compose", "infra"]
 ---
-
-# Docker 常用基础语法
 
 这页不是按 Docker CLI 字母表整理，而是按真实使用顺序组织：先理解镜像和容器，再学会运行、查看、进入、挂载、联网，最后用 Dockerfile 和 Compose 把流程固化。
 

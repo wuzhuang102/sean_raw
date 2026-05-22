@@ -1,5 +1,4 @@
 ---
-title: "Docker Basic Syntax Research Sources"
 created: "2026-05-22"
 sources:
   - "https://docs.docker.com/engine/containers/run/"
@@ -13,8 +12,6 @@ sources:
   - "https://docs.docker.com/reference/cli/docker/compose/"
   - "https://docs.docker.com/reference/"
 ---
-
-# Docker Basic Syntax Research Sources
 
 This raw source note captures the official Docker documentation pages used to compile the Docker basic syntax topic.
 
