@@ -47,12 +47,12 @@ wiki/
   glossary/
   reading-notes/
     index.md
-    technology/index.md
-    work/index.md
-    product/index.md
-    business/index.md
-    personal/index.md
-    misc/index.md
+    technology.md
+    work.md
+    product.md
+    business.md
+    personal.md
+    misc.md
   exports/
   meta/
 ```
@@ -68,7 +68,7 @@ Use semantic directories because the wiki is consumed by humans and LLMs by inte
 - `projects/`: project-specific context, architecture, incidents, and lessons.
 - `comparisons/`: technology or design option comparisons.
 - `glossary/`: short concept definitions with links to deeper pages.
-- `reading-notes/`: lightweight reading records grouped by one primary category. Use category `index.md` files instead of one page per source.
+- `reading-notes/`: lightweight reading records grouped by one primary category. Use one flat category markdown file such as `reading-notes/technology.md`; do not create `reading-notes/<category>/index.md` directories unless the user explicitly asks for a deeper local taxonomy.
 - `exports/`: generated outputs such as `wiki.html`, PDF-ready markdown, or slide markdown.
 - `meta/`: wiki maintenance notes, taxonomy decisions, lint reports, unresolved contradictions.
 
@@ -104,14 +104,14 @@ Use this workflow when the user asks to save, file, summarize, or remember an ar
 
 1. Put the reading record under `reading-notes/`, not under `topics/`, `patterns/`, or other durable knowledge directories by default.
 2. Use one primary category only. Prefer these categories unless the user gives a stronger local taxonomy:
-   - `reading-notes/technology/index.md`: engineering, AI, architecture, tools, technical papers, and implementation writeups
-   - `reading-notes/work/index.md`: management, collaboration, project retrospectives, organizational process, and career material
-   - `reading-notes/product/index.md`: product design, UX, growth, requirements, and user research
-   - `reading-notes/business/index.md`: companies, industries, commercial models, markets, and strategy
-   - `reading-notes/personal/index.md`: personal growth, learning systems, life systems, and non-work methods
-   - `reading-notes/misc/index.md`: material that does not yet have a stable home
+   - `reading-notes/technology.md`: engineering, AI, architecture, tools, technical papers, and implementation writeups
+   - `reading-notes/work.md`: management, collaboration, project retrospectives, organizational process, and career material
+   - `reading-notes/product.md`: product design, UX, growth, requirements, and user research
+   - `reading-notes/business.md`: companies, industries, commercial models, markets, and strategy
+   - `reading-notes/personal.md`: personal growth, learning systems, life systems, and non-work methods
+   - `reading-notes/misc.md`: material that does not yet have a stable home
 3. Do not duplicate the same source across multiple category files. Use `tags` for cross-category attributes.
-4. Inside each category `index.md`, keep entries newest-first by record date, grouped by year and month:
+4. Inside each category markdown file, keep entries newest-first by record date, grouped by year and month:
 
 ```markdown
 # 2026
@@ -135,7 +135,7 @@ Use this workflow when the user asks to save, file, summarize, or remember an ar
 - distilled: `topics/ai-engineering/example.md`, `patterns/example.md`
 ```
 
-11. Update `wiki/index.md` so it includes `# Reading Notes` and links to the category indexes that exist. Update `wiki/log.md` with action `reading-note`; consolidate same-day reading-note work when it is part of the same thread.
+11. Update `wiki/index.md` so it includes `# Reading Notes` and links directly to the category markdown files that exist, such as `reading-notes/technology.md`. Do not link to category directories for reading notes. Update `wiki/log.md` with action `reading-note`; consolidate same-day reading-note work when it is part of the same thread.
 
 ### Ingest Raw Sources
 

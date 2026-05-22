@@ -7,7 +7,7 @@ Use this taxonomy to keep the wiki useful as a full-stack engineering knowledge 
 Choose the first matching home:
 
 1. Is this a navigation surface or reading path? Put it in `maps/`.
-2. Is this a lightweight record of something the user read or wants to remember by link and summary? Put it in exactly one `reading-notes/<category>/index.md` file.
+2. Is this a lightweight record of something the user read or wants to remember by link and summary? Put it in exactly one `reading-notes/<category>.md` file.
 3. Is this a durable technical concept, method, problem, or mental model? Put it in `topics/`.
 4. Is this a reusable engineering design with tradeoffs and failure modes? Put it in `patterns/`.
 5. Is this a repeatable debugging, shipping, or operating procedure? Put it in `playbooks/`.
@@ -54,6 +54,6 @@ If a page could live in several places, put it where a reader would first look a
 
 `glossary`: A short concept definition.
 
-`reading-note`: A lightweight source record stored in a category `reading-notes/*/index.md` file. It keeps the link, a concise summary, tags, and optional `distilled` references, but does not become a standalone source page by default.
+`reading-note`: A lightweight source record stored in a category `reading-notes/<category>.md` file. It keeps the link, a concise summary, tags, and optional `distilled` references, but does not become a standalone source page by default.
 
 `meta`: Wiki maintenance, taxonomy, lint, contradiction, and export records.
