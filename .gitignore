@@ -1,0 +1,43 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editor and local tool state
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Logs
+log/
+logs/
+*.log
+*.log.*
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.orig
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
