@@ -2,6 +2,11 @@
 
 ## 2026-05
 
+### 2026-05-25 | reading-note | LLM Wiki
+- raw: `wiki/_raw/ai-engineering/karpathy-llm-wiki.md`
+- pages: `reading-notes/technology.md`, `patterns/llm-maintained-wiki.md`, `index.md`, `log.md`
+- notes: 收集 Karpathy 的 LLM Wiki gist，按“少原文翻译、多总结判断”的方向沉淀为 LLM 维护持久 Markdown 知识库的实践模式，并预留后续实践经验入口。
+
 ### 2026-05-22 | reading-note | FDE——AI 时代的职业转型已经打响？
 - raw: `wiki/_raw/sources/fde-ai-career-transition.md`
 - pages: `reading-notes/work.md`, `reading-notes/index.md`, `index.md`, `log.md`

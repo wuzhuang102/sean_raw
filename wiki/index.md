@@ -10,6 +10,10 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working knowledge 
 
 - [Docker 常用基础语法](topics/infra/docker-basic-syntax.md) - Docker 镜像、容器、Dockerfile、volume、网络、Compose 和清理命令的基础用法速查。
 
+# Patterns
+
+- [LLM-maintained wiki](patterns/llm-maintained-wiki.md) - 用 LLM 增量维护持久 Markdown 知识库的架构、操作循环和实践边界。
+
 # Reading Notes
 
 - [Reading Notes Index](reading-notes/index.md) - 轻量阅读记录总入口。
