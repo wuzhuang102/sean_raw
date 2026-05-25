@@ -1,32 +1,47 @@
-This wiki is maintained by the `sean-llm-wiki` skill. It is a working knowledge base for full-stack engineering: readable by humans, maintained by LLMs, and grounded in raw source files.
+This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineering knowledge base: readable by humans, maintained by LLMs, and grounded in raw source files when raw capture is needed.
 
-# Maps
+# AI
 
-- [AI 工具专栏](maps/ai-tools.md) - 持续整理 AI 工具的产品定位、技术路径、集成方式、适用场景、风险和替代方案。
+## 汇总
 
-# Topics
+- [AI 工具专栏](knowledge/ai/summaries/ai-tools.md) - AI 下重要 tool 项目的轻量分类、工具条目、评价框架和后续拆页入口。
 
-## topics/ai-engineering
+## 技术
 
-- [Agent Skill 基础概念](topics/ai-engineering/agent-skills-basic-concepts.md) - Agent skill 的组成、触发方式、适用边界和具体 skill 分类记录。
-- [Browser Use](topics/ai-engineering/browser-use.md) - 动态浏览器 Agent 框架，支持本地 SDK、CLI、Cloud 浏览器和托管 Agent 运行。
-- [Freu CLI / Freu AI](topics/ai-engineering/freu-cli.md) - 通过 AOT 编译把浏览器或桌面工作流沉淀为可复用 DSL/Skill 命令，降低重复 UI 自动化的 token 成本和延迟。
-- [agent-computer-use / agent-cu](topics/ai-engineering/agent-computer-use.md) - 基于 accessibility tree、selector 和 CDP 的本地桌面控制 CLI，为 Agent 提供低成本 computer use 动作层。
+- [Agent Skill 基础概念](knowledge/ai/technology/agent-skills-basic-concepts.md) - Agent skill 的组成、触发方式、适用边界和具体 skill 分类记录。
+- [LLM-maintained wiki](knowledge/ai/technology/llm-maintained-wiki.md) - 用 LLM 增量维护持久 Markdown 知识库的架构、操作循环和实践边界。
 
-## topics/infra
+# 前后端 / 全栈
 
-- [Docker 常用基础语法](topics/infra/docker-basic-syntax.md) - Docker 镜像、容器、Dockerfile、volume、网络、Compose 和清理命令的基础用法速查。
+## 基础文档
 
-# Patterns
+- [Docker 常用基础语法](knowledge/frontend-backend/fundamentals/docker-basic-syntax.md) - Docker 镜像、容器、Dockerfile、volume、网络、Compose 和清理命令的基础用法速查。
 
-- [LLM-maintained wiki](patterns/llm-maintained-wiki.md) - 用 LLM 增量维护持久 Markdown 知识库的架构、操作循环和实践边界。
+## 技术
 
-# Reading Notes
+- [后端知识体系](knowledge/frontend-backend/technology/backend-knowledge-system.md) - 后端技术栈能力地图，覆盖 API、数据库、事务、缓存、队列、安全、可观测性、部署、分布式和学习路径。
 
-- [Reading Notes Index](reading-notes/index.md) - 轻量阅读记录总入口。
-- [Technology](reading-notes/technology.md) - engineering, AI, architecture, tools, technical papers, and implementation writeups.
-- [Work](reading-notes/work.md) - management, collaboration, retrospectives, organizational process, and career material.
-- [Product](reading-notes/product.md) - product design, UX, growth, requirements, and user research.
-- [Business](reading-notes/business.md) - companies, industries, commercial models, markets, and strategy.
-- [Personal](reading-notes/personal.md) - personal growth, learning systems, life systems, and non-work methods.
-- [Misc](reading-notes/misc.md) - material that does not yet have a stable home.
+# 商业化
+
+当前还没有商业化知识文件。后续商业模式、行业分析、定价、增长、公司和产品商业化资料，优先按领域落到 `knowledge/<domain>/business/`。
+
+# Notes
+
+- [Technology](notes/technology.md) - engineering, AI, architecture, tools, technical papers, and implementation writeups.
+- [Work](notes/work.md) - management, collaboration, retrospectives, organizational process, and career material.
+
+# Maintenance
+
+- [Filing Rules](_meta/filing-rules.md) - 本 wiki 的本地分类规则，控制什么时候创建独立知识文件、什么时候写入聚合页子项。
+
+# Directory Model
+
+- `knowledge/ai/`: AI、Agent、LLM、模型、AI 工具和 AI 工程。
+- `knowledge/frontend-backend/`: 前端、后端、全栈、基础设施和通用工程。
+- `<domain>/summaries/`: 汇总、专栏、目录和轻量 catalog。
+- `<domain>/fundamentals/`: 基础 API、基础语法、基础操作手册和速查。
+- `<domain>/technology/`: 技术体系、工程模式、架构和长期专题。
+- `<domain>/business/`: 商业化、行业、公司、商业模式和增长相关知识；按需创建。
+- `notes/`: 轻量阅读记录；只创建实际有记录的分类文件。
+- `_raw/`: 内部原始来源；只在需要保留 provenance 时创建。
+- `_meta/`: 维护规则、分类规则、lint 和迁移记录。

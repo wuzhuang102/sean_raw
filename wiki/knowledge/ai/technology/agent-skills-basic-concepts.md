@@ -2,14 +2,14 @@
 type: "topic"
 status: "active"
 created: "2026-05-22"
-updated: "2026-05-22"
+updated: "2026-05-25"
 sources:
-  - "../../_raw/ai-engineering/agent-skill-basic-concepts-sources.md"
+  - "../../../_raw/ai-engineering/agent-skill-basic-concepts-sources.md"
   - "https://raw.githubusercontent.com/mattpocock/skills/main/skills/productivity/grill-me/SKILL.md"
   - "https://github.com/mattpocock/skills/tree/main/skills/productivity/grill-me"
   - "https://github.com/mattpocock/skills"
   - "https://www.skills.sh/mattpocock/skills"
-tags: ["agent", "skills", "ai-engineering"]
+tags: ["ai", "technology", "agent", "skills", "ai-engineering"]
 ---
 
 # Agent Skill 速记

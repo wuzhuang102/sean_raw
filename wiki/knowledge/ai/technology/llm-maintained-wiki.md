@@ -4,9 +4,9 @@ status: "active"
 created: "2026-05-25"
 updated: "2026-05-25"
 sources:
-  - "../_raw/ai-engineering/karpathy-llm-wiki.md"
+  - "../../../_raw/ai-engineering/karpathy-llm-wiki.md"
   - "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
-tags: ["llm", "knowledge-base", "wiki", "rag", "agent-workflow", "obsidian"]
+tags: ["ai", "technology", "llm", "knowledge-base", "wiki", "rag", "agent-workflow", "obsidian"]
 ---
 
 # 原文要点
@@ -28,17 +28,14 @@ raw source 只承担证据层职责，保持原文或原始抓取即可，不在
 
 ## Page 是工作台，不是文章译文
 
-一个 durable page 应该像工作台：有核心判断、适用场景、操作原则、失败模式、待补经验和来源。它不应该变成原文的中文展开版。
+一个 durable knowledge page 应该像工作台：有核心判断、适用场景、操作原则、失败模式、待补经验和来源。它不应该变成原文的中文展开版。
 
 ## 每次输入都要问“沉淀到哪里”
 
 输入可以是文章、经验、对话、代码阅读或问题。处理时不只写摘要，而是判断它应该沉淀到：
 
-- `reading-notes/`：轻量记录读过什么。
-- `topics/`：稳定概念和心智模型。
-- `patterns/`：可复用设计模式和取舍。
-- `playbooks/`：可重复执行的步骤。
-- `decisions/`：具体选择和背后的权衡。
+- `notes/`：轻量记录读过什么。
+- `knowledge/`：稳定概念、工程模式、操作手册、技术对比、项目上下文和具体选择。
 
 # 当前可采用的操作框架
 
@@ -49,7 +46,7 @@ raw source 只承担证据层职责，保持原文或原始抓取即可，不在
 1. 保存 raw。
 2. 写一条轻量 reading note。
 3. 选择一个 durable home。
-4. 更新 durable page 的判断和结构。
+4. 更新 durable knowledge page 的判断和结构。
 5. 更新 index/log。
 
 更重要的是第 3-4 步：如果只保存 raw 和阅读笔记，知识不会真正复利。
@@ -62,8 +59,8 @@ raw source 只承担证据层职责，保持原文或原始抓取即可，不在
 
 定期检查 wiki 是否开始退化成“文件堆”：
 
-- raw source 是否没有被吸收到 durable page。
-- durable page 是否只是摘要合集，没有自己的判断。
+- raw source 是否没有被吸收到 durable knowledge page。
+- durable knowledge page 是否只是摘要合集，没有自己的判断。
 - 重要概念是否散落在多个页面。
 - index 是否还能反映真实导航。
 - log 是否能解释最近为什么改动。
