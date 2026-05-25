@@ -1,10 +1,17 @@
 This wiki is maintained by the `sean-llm-wiki` skill. It is a working knowledge base for full-stack engineering: readable by humans, maintained by LLMs, and grounded in raw source files.
 
+# Maps
+
+- [AI 工具专栏](maps/ai-tools.md) - 持续整理 AI 工具的产品定位、技术路径、集成方式、适用场景、风险和替代方案。
+
 # Topics
 
 ## topics/ai-engineering
 
 - [Agent Skill 基础概念](topics/ai-engineering/agent-skills-basic-concepts.md) - Agent skill 的组成、触发方式、适用边界和具体 skill 分类记录。
+- [Browser Use](topics/ai-engineering/browser-use.md) - 动态浏览器 Agent 框架，支持本地 SDK、CLI、Cloud 浏览器和托管 Agent 运行。
+- [Freu CLI / Freu AI](topics/ai-engineering/freu-cli.md) - 通过 AOT 编译把浏览器或桌面工作流沉淀为可复用 DSL/Skill 命令，降低重复 UI 自动化的 token 成本和延迟。
+- [agent-computer-use / agent-cu](topics/ai-engineering/agent-computer-use.md) - 基于 accessibility tree、selector 和 CDP 的本地桌面控制 CLI，为 Agent 提供低成本 computer use 动作层。
 
 ## topics/infra
 

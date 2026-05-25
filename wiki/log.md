@@ -2,6 +2,16 @@
 
 ## 2026-05
 
+### 2026-05-25 | ingest | Browser Use 与 agent-computer-use
+- raw: `wiki/_raw/ai-tools/browser-use-sources.md`, `wiki/_raw/ai-tools/agent-computer-use-sources.md`
+- pages: `maps/ai-tools.md`, `topics/ai-engineering/browser-use.md`, `topics/ai-engineering/agent-computer-use.md`, `index.md`, `log.md`
+- notes: 调研 Browser Use 和用户所称 compute-use 的最匹配项目 agent-computer-use，整理动态浏览器 Agent、托管浏览器、accessibility-first desktop control、Agent Skill 集成、适用场景和风险边界。
+
+### 2026-05-25 | ingest | Freu CLI / Freu AI
+- raw: `wiki/_raw/ai-tools/freu-cli-sources.md`
+- pages: `maps/ai-tools.md`, `topics/ai-engineering/freu-cli.md`, `index.md`, `log.md`
+- notes: 开辟 AI 工具专栏，收集 Product Hunt、官网和 GitHub 仓库信息，整理 Freu CLI/Freu AI 的产品定位、AOT 编译工作流、Agent Skill 集成、适用场景和风险观察点。
+
 ### 2026-05-25 | reading-note | LLM Wiki
 - raw: `wiki/_raw/ai-engineering/karpathy-llm-wiki.md`
 - pages: `reading-notes/technology.md`, `patterns/llm-maintained-wiki.md`, `index.md`, `log.md`
