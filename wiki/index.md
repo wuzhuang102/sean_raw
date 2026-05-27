@@ -26,7 +26,7 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 
 ## 专题
 
-- [产品 Sense](knowledge/product/产品Sense.md) - 产品判断力的形成机制、领域边界、用户接触方法、组织协作和常见误区。
+- [产品 Sense](knowledge/product/产品Sense.md) - 产品判断力的形成机制、领域边界、用户接触方法、组织协作、社区争议和常见误区。
 
 # 商业化
 

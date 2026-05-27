@@ -2,10 +2,13 @@
 type: "catalog"
 status: "active"
 created: "2026-05-26"
-updated: "2026-05-26"
+updated: "2026-05-27"
 sources:
   - "https://www.pencil.dev/"
   - "https://docs.pencil.dev/"
+  - "https://www.anygen.io/"
+  - "https://www.anygen.io/product/slides"
+  - "https://www.anygen.io/product/doc"
 tags: ["ai", "summary", "ai-products", "product-evaluation"]
 ---
 
@@ -41,6 +44,17 @@ AI 产品专栏默认用“子项条目”维护产品信息，而不是为每�
 - `来源`：官方站点、文档、条款或可信公开资料。
 
 # 产品索引与条目
+
+## AI 办公与知识工作
+
+### AnyGen
+
+- 分类：AI 办公与知识工作 / 文档与幻灯片协作 / AI 分析型工作台
+- 定位：把 AI 写作、PPT 生成、数据分析和协作编辑放进同一工作台，强调“和 AI 一起打磨成品”，而不是一次性出稿。
+- 核心工作流：从提示词、文档或数据出发先生成文档、报告或幻灯片，再在页内持续改写、补充、校对和协作；其中 Slides 强调原生可编辑 PPT，Docs 强调边写边改和把数据转成可视化报告。
+- 适合场景：市场和销售材料、咨询式汇报、团队周报、分析报告、需要导出可编辑 PPT 的商务文档，以及不想在“聊天窗口”和“Office 编辑器”之间反复切换的知识工作者。
+- 风险：官网主打效果与体验，但企业级安全、权限、审计、系统集成和长期稳定性信息仍不够完整；价格、额度和功能边界可能继续变化；如果团队要求强模板治理、复杂协作审批或私有化部署，仍要先做小范围验证。
+- 来源：[Website](https://www.anygen.io/), [Slides](https://www.anygen.io/product/slides), [Docs](https://www.anygen.io/product/doc)
 
 ## AI 设计与 Design-to-code
 

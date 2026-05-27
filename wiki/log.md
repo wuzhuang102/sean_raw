@@ -2,6 +2,16 @@
 
 ## 2026-05
 
+### 2026-05-27 | classify | AnyGen
+- raw: none
+- knowledge: `knowledge/ai/AI产品.md`, `log.md`
+- notes: 将 AnyGen 作为 AI 办公与知识工作产品补入 AI 产品专栏，记录其文档、幻灯片、分析型工作台定位，以及适用场景与采用风险。
+
+### 2026-05-27 | ingest | Product Sense Reddit discussion
+- raw: `wiki/_raw/product/product-sense-reddit-discussion.md`
+- knowledge: `knowledge/product/产品Sense.md`, `index.md`, `log.md`
+- notes: 按用户要求不写入读书笔记；将 Reddit r/ProductManagement 的 Product Sense 讨论补充为 Product Sense 专题数据源，记录社区对客户理解、领域判断、产品直觉和面试主观门槛的分歧。
+
 ### 2026-05-26 | ingest | CodeGraph
 - raw: `wiki/_raw/ai-tools/codegraph-readme.md`
 - knowledge: `knowledge/ai/AI工具.md`, `index.md`, `log.md`
