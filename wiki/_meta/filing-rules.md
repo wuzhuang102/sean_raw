@@ -2,7 +2,7 @@
 type: "meta"
 status: "active"
 created: "2026-05-25"
-updated: "2026-05-25"
+updated: "2026-05-26"
 sources: []
 tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 ---
@@ -23,32 +23,44 @@ tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 
 - 不预创建完整目录树。
 - 顶层目录按使用方式组织：`knowledge/`、`notes/`、`_raw/`、`_meta/`，需要导出时再创建 `exports/`。
-- `knowledge/` 承载所有可读知识页；在 `knowledge/` 内按需用“领域/内容形态”二级路径组织，不创建空目录。
-- 领域优先使用这些目录名：`frontend-backend/` 表示前端、后端、全栈、基础设施和通用工程；`ai/` 表示 AI、Agent、LLM、模型、AI 工具和 AI 工程；未来出现稳定新领域时再按需新增。
-- 内容形态在领域目录内使用这些目录名：`summaries/` 表示汇总、专栏、目录和轻量 catalog；`fundamentals/` 表示基础 API、基础语法、基础操作手册和速查；`technology/` 表示可复用技术专题、工程模式、架构、技术栈和实践；`business/` 表示商业化、行业、公司、商业模式和增长相关知识。
-- 目录表达主归属；frontmatter `type` 继续表达知识文件语义，例如 topic、pattern、playbook、decision、project、comparison、map、catalog。
+- `knowledge/` 承载所有可读知识页；在 `knowledge/` 内只保留必要的领域目录，不在领域目录下继续按内容形态分层。
+- 领域优先使用这些目录名：`frontend-backend/` 表示前端、后端、全栈、基础设施和通用工程；`ai/` 表示 AI、Agent、LLM、模型、AI 产品、AI 工具和 AI 工程；`product/` 表示产品方法论、Product Sense、产品设计、用户研究、需求、增长和产品组织；未来出现稳定新领域时再按需新增。
+- 内容形态不再生成目录；汇总、基础文档、技术专题、商业化等分组由 `index.md`、frontmatter `type` 和 tags 表达。
+- 目录只表达主领域；frontmatter `type` 继续表达知识文件语义，例如 topic、pattern、playbook、decision、project、comparison、map、catalog。
 - `notes/` 只保留有真实记录的阅读笔记分类文件，不保留空占位文件。
 - `_raw/` 只在需要 provenance 时创建来源文件和语义子目录。
 - `_meta/` 承载本文件、lint、contradiction、migration 等维护状态。
 
+# 命名规则
+
+- wiki 中面向阅读的 Markdown 文件名默认使用中文维护，主要包括 `knowledge/` 和 `notes/` 下的新建文件。
+- 顶层导航文件 `index.md`、维护日志 `log.md`、`_meta/` 下的维护文件、`_raw/` 下的原始来源文件固定使用英文文件名。
+- 目录名不用中文化，继续沿用现有英文目录结构，例如 `knowledge/ai/`、`knowledge/frontend-backend/`、`notes/`、`_raw/`、`_meta/`。
+- 中文文件名使用清晰中文短语，必要时保留产品名、项目名、协议名或英文专有名词，例如 `AI产品.md`、`MCP设计工作流.md`。
+- 英文维护文件和 raw 文件使用稳定 kebab-case，例如 `filing-rules.md`、`pencil-dev-sources.md`。
+- 现有 wiki Markdown 文件已按本规则迁移；后续迁移或重命名文件时同步更新 `index.md`、相关页面链接和 `log.md`。
+
 # 路径分类决策
 
-新建或迁移页面时，先判断“领域”，再判断“内容形态”：
+新建或迁移页面时，先判断“领域”，再用 frontmatter 和索引分组表达“内容形态”：
 
-1. 先选领域：AI/Agent/LLM/模型/AI 工具归入 `knowledge/ai/`；前端/后端/全栈/基础设施/通用工程归入 `knowledge/frontend-backend/`。
-2. 如果页面主要是目录、清单、专题入口、工具集合、资料聚合或轻量子项容器，放入 `knowledge/<domain>/summaries/`。
-3. 如果页面主要是基础 API、基础语法、命令速查、协议基础、框架入门或可按手册查阅的底层知识，放入 `knowledge/<domain>/fundamentals/`。
-4. 如果页面主要是技术体系、工程模式、架构判断、实践方法、技术对比、项目落地和长期专题，放入 `knowledge/<domain>/technology/`。
-5. 如果页面主要是商业化策略、行业分析、公司/产品商业模式、增长、定价、市场、销售和组织经营，放入 `knowledge/<domain>/business/`。
-6. 如果一个页面跨多个领域，选择最主要的长期使用场景作为主路径，在 tags 和交叉链接里标注其他领域，不复制页面。
+1. 先选领域：AI/Agent/LLM/模型/AI 产品/AI 工具归入 `knowledge/ai/`；前端/后端/全栈/基础设施/通用工程归入 `knowledge/frontend-backend/`；产品方法论、Product Sense、用户研究、需求、增长和产品组织归入 `knowledge/product/`。
+2. 领域目录下直接放 markdown 文件，例如 `knowledge/ai/AI工具.md`、`knowledge/frontend-backend/Docker基础语法.md`。
+3. 如果页面主要是目录、清单、专题入口、工具集合、资料聚合或轻量子项容器，frontmatter `type` 用 `catalog` 或 `map`，并在 `index.md` 的“汇总”分组展示。
+4. 如果页面主要是基础 API、基础语法、命令速查、协议基础、框架入门或可按手册查阅的底层知识，frontmatter `type` 用 `topic` 或 `playbook`，并在 `index.md` 的“基础文档”分组展示。
+5. 如果页面主要是技术体系、工程模式、架构判断、实践方法、技术对比、项目落地和长期专题，frontmatter `type` 用 `topic`、`pattern`、`playbook`、`comparison` 或 `project`，并在 `index.md` 的“技术”分组展示。
+6. 如果页面主要是商业化策略、行业分析、公司/产品商业模式、增长、定价、市场、销售和组织经营，仍放在主领域目录下，并在 `index.md` 的“商业化”分组展示。
+7. 如果一个页面跨多个领域，选择最主要的长期使用场景作为主路径，在 tags 和交叉链接里标注其他领域，不复制页面。
 
 当前已落地的主分类：
 
-- `knowledge/ai/summaries/ai-tools.md`：AI 下重要 tool 项目的汇总和轻量条目。
-- `knowledge/frontend-backend/fundamentals/docker-basic-syntax.md`：前后端/全栈工程基础文档。
-- `knowledge/frontend-backend/technology/backend-knowledge-system.md`：前后端技术体系入口。
-- `knowledge/ai/technology/agent-skills-basic-concepts.md`：AI 工程基础概念。
-- `knowledge/ai/technology/llm-maintained-wiki.md`：AI 工程知识库维护模式。
+- `knowledge/ai/AI产品.md`：AI 下重要产品的汇总、产品分析和轻量条目。
+- `knowledge/ai/AI工具.md`：AI 下重要工具、框架、CLI、库和资源项目的汇总和轻量条目。
+- `knowledge/frontend-backend/Docker基础语法.md`：前后端/全栈工程基础文档。
+- `knowledge/frontend-backend/后端知识体系.md`：前后端技术体系入口。
+- `knowledge/ai/Agent-Skill基础概念.md`：AI 工程基础概念。
+- `knowledge/ai/LLM维护Wiki.md`：AI 工程知识库维护模式。
+- `knowledge/product/产品Sense.md`：产品判断力与产品方法论专题。
 
 # 创建独立页面的条件
 
@@ -77,10 +89,27 @@ tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 
 # 当前聚合页规则
 
+## AI 产品
+
+- 聚合页：`knowledge/ai/AI产品.md`
+- 默认形态：产品作为子项维护，不单开 topic 页。
+- AI 产品定义：有明确用户体验、工作流入口、商业/团队使用场景和产品边界的应用或平台。
+- 子项字段：`分类`、`定位`、`核心工作流`、`适合场景`、`风险`、`来源`。
+- 允许的一级分类：
+  - `AI 设计与 Design-to-code`
+  - `AI 编程与软件交付`
+  - `AI 办公与知识工作`
+  - `AI 内容生成`
+  - `AI 数据分析与商业智能`
+  - `行业垂直 AI 产品`
+  - `其他待归类`
+- 拆页条件：某个产品需要展开商业模式、竞品比较、落地 playbook、长期使用记录，或被多个知识页面引用。
+
 ## AI 工具
 
-- 聚合页：`knowledge/ai/summaries/ai-tools.md`
+- 聚合页：`knowledge/ai/AI工具.md`
 - 默认形态：工具作为子项维护，不单开 topic 页。
+- AI 工具定义：偏工程组件、框架、CLI、库、协议、资源集合、Agent 能力或可嵌入基础设施。
 - 子项字段：`分类`、`定位`、`技术路径`、`适合场景`、`风险`、`来源`。
 - 允许的一级分类：
   - `自动化与 Agent 执行`

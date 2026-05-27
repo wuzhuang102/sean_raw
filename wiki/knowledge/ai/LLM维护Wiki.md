@@ -2,9 +2,9 @@
 type: "pattern"
 status: "active"
 created: "2026-05-25"
-updated: "2026-05-25"
+updated: "2026-05-26"
 sources:
-  - "../../../_raw/ai-engineering/karpathy-llm-wiki.md"
+  - "../../_raw/ai-engineering/karpathy-llm-wiki.md"
   - "https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f"
 tags: ["ai", "technology", "llm", "knowledge-base", "wiki", "rag", "agent-workflow", "obsidian"]
 ---

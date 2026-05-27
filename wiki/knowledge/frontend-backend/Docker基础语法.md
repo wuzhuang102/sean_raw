@@ -2,9 +2,9 @@
 type: "topic"
 status: "active"
 created: "2026-05-22"
-updated: "2026-05-25"
+updated: "2026-05-26"
 sources:
-  - "../../../_raw/infra/docker-basic-syntax-sources.md"
+  - "../../_raw/infra/docker-basic-syntax-sources.md"
 tags: ["frontend-backend", "fundamentals", "docker", "container", "image", "compose", "infra"]
 ---
 

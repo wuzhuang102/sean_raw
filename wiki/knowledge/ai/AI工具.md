@@ -2,7 +2,7 @@
 type: "catalog"
 status: "active"
 created: "2026-05-25"
-updated: "2026-05-25"
+updated: "2026-05-26"
 sources:
   - "https://github.com/browser-use/browser-use"
   - "https://docs.browser-use.com/"
@@ -12,6 +12,8 @@ sources:
   - "https://www.agent-computer-use.dev/"
   - "https://github.com/VoltAgent/voltagent"
   - "https://github.com/voltagent/awesome-design-md"
+  - "https://github.com/colbymchenry/codegraph"
+  - "https://colbymchenry.github.io/codegraph/"
 tags: ["ai", "summary", "ai-tools", "tool-evaluation", "automation"]
 ---
 
@@ -82,6 +84,17 @@ AI 工具专栏默认用“子项条目”维护工具信息，而不是为每�
 - 风险：平台覆盖面较广，评估时需要分清框架能力、托管服务能力和团队是否愿意围绕 TypeScript 生态建设。
 - 来源：[GitHub](https://github.com/VoltAgent/voltagent), [Docs](https://voltagent.dev/docs/)
 
+## 知识库、记忆与检索
+
+### CodeGraph
+
+- 分类：本地语义代码图谱 / MCP code intelligence / Agent 代码检索加速器
+- 定位：为 Claude Code、Cursor、Codex CLI、opencode 等编码 Agent 构建本地代码知识图谱，让 Agent 用符号、调用关系、路由、影响范围和文件结构查询替代反复 grep/read 探索。
+- 技术路径：tree-sitter 解析、多语言符号与调用边抽取、SQLite + FTS5、本地 `.codegraph/` 索引、MCP server、文件 watcher 增量同步、framework-aware route extraction、跨语言 iOS / React Native / Expo bridge heuristic。
+- 适合场景：中大型代码库架构问答、调用链追踪、影响面分析、受影响测试发现，以及希望降低 Agent 探索 token、工具调用和延迟的团队。
+- 风险：价值依赖索引质量、语言/框架支持范围和 Agent 是否按指令直接查询 CodeGraph；README 中的成本/速度 benchmark 需要结合自己的仓库、问题类型和模型版本复测；工具需要本地安装、初始化并维护 `.codegraph/` 索引。
+- 来源：[GitHub](https://github.com/colbymchenry/codegraph), [Docs](https://colbymchenry.github.io/codegraph/)
+
 ## AI 辅助设计与 UI 生成
 
 ### awesome-design-md
@@ -92,6 +105,7 @@ AI 工具专栏默认用“子项条目”维护工具信息，而不是为每�
 - 适合场景：使用 Cursor、Claude Code、Codex、Google Stitch 等工具生成前端页面时，减少风格漂移并提供可复用视觉规范。
 - 风险：它不是运行时框架，价值取决于设计上下文质量以及生成工具是否真正遵守约束。
 - 来源：[GitHub](https://github.com/voltagent/awesome-design-md), [Google Stitch DESIGN.md overview](https://stitch.withgoogle.com/docs/design-md/overview/)
+- 个人使用评价：单纯依赖此类规范，意义不是很大，代码直出的设计很大程度上很拉胯，建议还是使用 design -> code 的逻辑分开运行。
 
 # 评价框架
 
@@ -113,8 +127,8 @@ AI 工具的风险不只来自模型错误，也来自权限过大、自动执�
 
 # 关联页面
 
-- [Agent Skill 基础概念](../technology/agent-skills-basic-concepts.md)
+- [Agent Skill 基础概念](Agent-Skill基础概念.md)
 
 # 来源说明
 
-本页以前为部分工具维护了独立 topic 页和内部 raw capture。2026-05-25 起，AI 工具类内容默认收敛为本页子项；只有当工具分析升级为可复用工程知识时，才拆出 `knowledge/ai/technology/` 或其他合适分类下的独立页面。
+本页以前为部分工具维护了独立 topic 页和内部 raw capture。2026-05-25 起，AI 工具类内容默认收敛为本页子项；只有当工具分析升级为可复用工程知识时，才拆出 `knowledge/ai/` 下的独立页面，并通过 frontmatter 和索引分组表达页面类型。
