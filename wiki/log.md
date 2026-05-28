@@ -2,6 +2,21 @@
 
 ## 2026-05
 
+### 2026-05-28 | ingest | Python 入门到进阶
+- raw: none
+- knowledge: `knowledge/frontend-backend/Python入门到进阶.md`, `knowledge/frontend-backend/技术学习资料.md`, `index.md`, `log.md`
+- notes: 整理 Python 从入门到进阶的系统学习路径，按语法、小脚本、标准库、项目结构、测试、包管理、类型标注、并发、Web 后端和数据处理组织，并补充已验证可访问的官方与优质外部资料链接；追加变量与类型、条件、循环、函数、列表/字典、字符串、异常、模块导入等基础语法示例，以及批量重命名、CSV 汇总、CLI、pytest、FastAPI、asyncio 和 pandas 的具体示例与关注点。
+
+### 2026-05-28 | ingest | Agent Sandbox
+- raw: `wiki/_raw/ai-engineering/agent-sandbox-sources.md`
+- knowledge: `knowledge/ai/Agent Sandbox.md`, `index.md`, `log.md`
+- notes: 按用户要求将页面收缩为最小骨架，只保留历史背景、定义和使用场景；后续工具、选型和实践内容单独追加。
+
+### 2026-05-27 | catalog | 技术学习资料
+- raw: none
+- knowledge: `knowledge/frontend-backend/技术学习资料.md`, `index.md`, `log.md`
+- notes: 按用户要求不作为 notes 保存；新建技术学习资料聚合页，并将程序园 Article 分类页以一句话介绍的轻量条目归入后端与通用工程学习资料。
+
 ### 2026-05-27 | classify | AnyGen
 - raw: none
 - knowledge: `knowledge/ai/AI产品.md`, `log.md`

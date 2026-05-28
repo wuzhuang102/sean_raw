@@ -10,12 +10,18 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 ## 技术
 
 - [Agent Skill 基础概念](knowledge/ai/Agent-Skill基础概念.md) - Agent skill 的组成、触发方式、适用边界和具体 skill 分类记录。
+- [Agent Sandbox](knowledge/ai/Agent%20Sandbox.md) - Agent 受控执行环境的概念边界、典型使用场景、工具版图和选型框架，预留后续实践追加入口。
 - [LLM-maintained wiki](knowledge/ai/LLM维护Wiki.md) - 用 LLM 增量维护持久 Markdown 知识库的架构、操作循环和实践边界。
 
 # 前后端 / 全栈
 
+## 汇总
+
+- [技术学习资料](knowledge/frontend-backend/技术学习资料.md) - 长期维护技术站点、专题课程和分类导航类资料入口，作为后端与通用工程补课时的资源索引。
+
 ## 基础文档
 
+- [Python 入门到进阶](knowledge/frontend-backend/Python入门到进阶.md) - Python 从入门语法、小脚本、标准库，到测试、包管理、类型标注、Web 后端、数据处理和并发的学习路径与资料索引。
 - [Docker 常用基础语法](knowledge/frontend-backend/Docker基础语法.md) - Docker 镜像、容器、Dockerfile、volume、网络、Compose 和清理命令的基础用法速查。
 
 ## 技术
