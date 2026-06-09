@@ -670,5 +670,5 @@ summary.to_csv("daily_revenue.csv", index=False)
 
 # 关联页面
 
-- [技术学习资料](技术学习资料.md)
+- [技术学习资料](../技术学习资料.md)
 - [后端知识体系](后端知识体系.md)

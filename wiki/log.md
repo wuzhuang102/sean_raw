@@ -1,10 +1,42 @@
 # 2026
 
+## 2026-06
+
+### 2026-06-09 | catalog | 技术学习资料
+- raw: none
+- knowledge: `knowledge/技术学习资料.md`, `_meta/filing-rules.md`, `index.md`, `log.md`
+- notes: 按用户要求将技术学习资料页上提到 `knowledge/`，移除三级标题展开，改为二级分类下的 `- [资料](link): 简介` 列表格式；新增 Harness 101 飞书 Wiki 目录，并将 hello-agents、mini-swe-agent、nanobot、hermes-agent 汇总为 Agent 学习项目列表。
+
+### 2026-06-09 | reading-note | Harness 101：Loop Engineering—从 ReAct 到 Orchestration
+- raw: `wiki/_raw/ai-engineering/harness-loop-engineering-feishu.md`
+- knowledge: `notes/技术.md`, `log.md`
+- notes: 读取飞书 Wiki 文章，按 Loop Engineering、Dynamic Workflow、Skill 与 Orchestration 的分工归入 Technology 阅读笔记；保留原始 Markdown 抓取用于 provenance，不额外沉淀 durable knowledge 页面。
+
+### 2026-06-09 | reading-note | 章鱼给 AI Agent 的一课：真正的智能，不只住在“大脑”里
+- raw: `wiki/_raw/ai-engineering/octopus-agent-feishu.md`
+- knowledge: `notes/技术.md`, `log.md`
+- notes: 读取飞书 Docx，按用户要求只记录为 Technology 读书笔记；保留原始 Markdown 抓取用于 provenance，不额外沉淀 durable knowledge 页面。
+
+### 2026-06-04 | ingest | 工作、技术、AI、产品想法规划
+- raw: none
+- knowledge: `knowledge/product/工作技术AI产品想法规划.md`, `index.md`, `log.md`
+- notes: 按用户要求单开长期规划页，用于持续输出当前对工作、技术、AI 和产品的想法；随后按用户要求仅记录 Cat Wu 关于 PM 的思考原文，不做额外扩展。
+
+### 2026-06-03 | ingest | 判断力
+- raw: none
+- knowledge: `knowledge/product/判断力.md`, `index.md`, `log.md`
+- notes: 按用户要求新建“判断力”草稿页，作为后续追加观点、案例、文章和复盘的长期入口，并同步加入产品专题索引。
+
+### 2026-06-01 | reading-note | 软件做到头那天，我反而活过来了
+- raw: `wiki/_raw/work/software-career-ai-hardware-wechat.html`
+- knowledge: `notes/工作.md`, `log.md`
+- notes: 抓取微信公众号“AI比我快”文章，按职业转向、AI 硬件和具身智能方向归入 Work 阅读笔记；记录软件人从纯软件转向物理世界、用真实场景训练 AI 使用能力和判断力的核心观点。
+
 ## 2026-05
 
 ### 2026-05-28 | ingest | Python 入门到进阶
 - raw: none
-- knowledge: `knowledge/frontend-backend/Python入门到进阶.md`, `knowledge/frontend-backend/技术学习资料.md`, `index.md`, `log.md`
+- knowledge: `knowledge/frontend-backend/Python入门到进阶.md`, `knowledge/技术学习资料.md`, `index.md`, `log.md`
 - notes: 整理 Python 从入门到进阶的系统学习路径，按语法、小脚本、标准库、项目结构、测试、包管理、类型标注、并发、Web 后端和数据处理组织，并补充已验证可访问的官方与优质外部资料链接；追加变量与类型、条件、循环、函数、列表/字典、字符串、异常、模块导入等基础语法示例，以及批量重命名、CSV 汇总、CLI、pytest、FastAPI、asyncio 和 pandas 的具体示例与关注点。
 
 ### 2026-05-28 | ingest | Agent Sandbox
@@ -14,7 +46,7 @@
 
 ### 2026-05-27 | catalog | 技术学习资料
 - raw: none
-- knowledge: `knowledge/frontend-backend/技术学习资料.md`, `index.md`, `log.md`
+- knowledge: `knowledge/技术学习资料.md`, `index.md`, `log.md`
 - notes: 按用户要求不作为 notes 保存；新建技术学习资料聚合页，并将程序园 Article 分类页以一句话介绍的轻量条目归入后端与通用工程学习资料。
 
 ### 2026-05-27 | classify | AnyGen

@@ -17,7 +17,7 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 
 ## 汇总
 
-- [技术学习资料](knowledge/frontend-backend/技术学习资料.md) - 长期维护技术站点、专题课程和分类导航类资料入口，作为后端与通用工程补课时的资源索引。
+- [技术学习资料](knowledge/技术学习资料.md) - 长期维护技术站点、专题课程和分类导航类资料入口，作为后端、通用工程与 AI Agent 工程补课时的资源索引。
 
 ## 基础文档
 
@@ -32,6 +32,8 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 
 ## 专题
 
+- [工作、技术、AI、产品想法规划](knowledge/product/工作技术AI产品想法规划.md) - 长期记录和规划关于工作、技术、AI 与产品的个人判断、待验证问题、行动实验和后续拆页入口。
+- [判断力](knowledge/product/判断力.md) - 长期沉淀判断力的来源、校准、决策应用和后续案例，先保留为可追加草稿。
 - [产品 Sense](knowledge/product/产品Sense.md) - 产品判断力的形成机制、领域边界、用户接触方法、组织协作、社区争议和常见误区。
 
 # 商业化
@@ -53,7 +55,9 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 - `knowledge/ai/`: AI、Agent、LLM、模型、AI 工具和 AI 工程。
 - `knowledge/frontend-backend/`: 前端、后端、全栈、基础设施和通用工程。
 - `knowledge/product/`: 产品方法论、Product Sense、产品设计、用户研究、需求、增长和产品组织。
+- `knowledge/技术学习资料.md`: 跨前后端、通用工程与 AI Agent 工程的学习资料入口。
 - 领域目录下直接放知识文件；不再按 `summaries/`、`fundamentals/`、`technology/`、`business/` 继续分层。
+- 跨领域资料导航页可以直接放在 `knowledge/` 顶层。
 - 内容形态通过 frontmatter `type`、tags 和本索引中的分组表达。
 - `notes/`: 轻量阅读记录；只创建实际有记录的分类文件。
 - `_raw/`: 内部原始来源；只在需要保留 provenance 时创建。

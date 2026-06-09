@@ -2,7 +2,7 @@
 type: "meta"
 status: "active"
 created: "2026-05-25"
-updated: "2026-05-26"
+updated: "2026-06-09"
 sources: []
 tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 ---
@@ -25,6 +25,7 @@ tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 - 顶层目录按使用方式组织：`knowledge/`、`notes/`、`_raw/`、`_meta/`，需要导出时再创建 `exports/`。
 - `knowledge/` 承载所有可读知识页；在 `knowledge/` 内只保留必要的领域目录，不在领域目录下继续按内容形态分层。
 - 领域优先使用这些目录名：`frontend-backend/` 表示前端、后端、全栈、基础设施和通用工程；`ai/` 表示 AI、Agent、LLM、模型、AI 产品、AI 工具和 AI 工程；`product/` 表示产品方法论、Product Sense、产品设计、用户研究、需求、增长和产品组织；未来出现稳定新领域时再按需新增。
+- 跨领域的学习资料入口、资源索引和导航页可以直接放在 `knowledge/` 下，不强行归入某个领域目录。
 - 内容形态不再生成目录；汇总、基础文档、技术专题、商业化等分组由 `index.md`、frontmatter `type` 和 tags 表达。
 - 目录只表达主领域；frontmatter `type` 继续表达知识文件语义，例如 topic、pattern、playbook、decision、project、comparison、map、catalog。
 - `notes/` 只保留有真实记录的阅读笔记分类文件，不保留空占位文件。
@@ -61,6 +62,7 @@ tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 - `knowledge/ai/Agent-Skill基础概念.md`：AI 工程基础概念。
 - `knowledge/ai/LLM维护Wiki.md`：AI 工程知识库维护模式。
 - `knowledge/product/产品Sense.md`：产品判断力与产品方法论专题。
+- `knowledge/技术学习资料.md`：跨前后端、通用工程与 AI Agent 工程的技术学习资料入口。
 
 # 创建独立页面的条件
 
