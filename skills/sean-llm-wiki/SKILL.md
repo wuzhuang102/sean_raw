@@ -10,6 +10,7 @@ Treat the wiki as a compiled knowledge layer between raw sources and answers. Th
 
 - Keep raw sources immutable under `<project>/wiki/_raw/` when raw capture is needed. Create semantic subdirectories on demand; do not pre-create empty raw categories. Do not use `<project>/raw/` for this skill.
 - Maintain generated wiki knowledge files in `<project>/wiki/`.
+- Create and edit wiki files directly at their final paths under `<project>/wiki/`. Do not create generated wiki pages, notes, logs, indexes, or raw captures in temporary locations and then copy them into the wiki, unless a tool cannot write the final path directly.
 - Prefer markdown as the canonical format.
 - Generate single-file HTML exports only from the markdown wiki; do not edit exported HTML as source.
 - Update `wiki/index.md` and `wiki/log.md` on every ingest, reading-note update, query-to-page, lint pass, or export. Keep `wiki/log.md` newest-first, grouped by year and month.
