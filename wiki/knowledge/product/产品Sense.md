@@ -2,12 +2,14 @@
 type: "topic"
 status: "active"
 created: "2026-05-26"
-updated: "2026-05-27"
+updated: "2026-06-17"
 sources:
   - "../../_raw/product/product-judgment-intercom.html"
   - "../../_raw/product/product-sense-reddit-discussion.md"
+  - "../../_raw/product/product-hunt-research-2026-06-17.md"
   - "https://www.intercom.com/blog/product-judgment/"
   - "https://www.reddit.com/r/ProductManagement/comments/177thod/product_sense_thoughts/"
+  - "https://www.producthunt.com/launch/how-product-hunt-works"
 tags: ["product", "product-sense", "product-judgment", "customer-research", "product-management"]
 ---
 
@@ -103,6 +105,10 @@ Reddit r/ProductManagement 的讨论显示，Product Sense 在从业者语境里
 - Product Sense 如果不绑定客户、领域和证据，容易退化成“我觉得”的包装。
 - Product Intuition 和 Product Judgment 可以拆开看：前者偏产品视角、模式识别和不确定性判断，后者偏具体用户、具体场景、具体商业约束下的决策质量。
 - 面试中的 Product Sense 评估要警惕误判：短时间内要求候选人展示深度市场和用户知识，本质上可能是在测试既有领域经验，而不是可迁移的产品能力。
+
+# 外部社区反馈渠道
+
+[Product Hunt 调研](Product%20Hunt调研.md)提供了一个产品发布社区视角：Product Hunt 可以集中暴露早期采用者如何理解一句话定位、demo、价格感知、竞品差异和信任边界。它适合补充 Product Sense 的输入，但不能替代直接用户观察，因为 Product Hunt 社区样本偏科技早期用户，且 launch-day upvote/comment 更像发布叙事和分发动员信号，不等于长期留存、付费意愿或真实工作流采用。
 
 # 常见误区
 

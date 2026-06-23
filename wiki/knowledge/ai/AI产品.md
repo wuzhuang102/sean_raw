@@ -2,13 +2,21 @@
 type: "catalog"
 status: "active"
 created: "2026-05-26"
-updated: "2026-05-27"
+updated: "2026-06-17"
 sources:
   - "https://www.pencil.dev/"
   - "https://docs.pencil.dev/"
   - "https://www.anygen.io/"
   - "https://www.anygen.io/product/slides"
   - "https://www.anygen.io/product/doc"
+  - "https://www.plurai.ai/"
+  - "https://www.plurai.ai/simulation"
+  - "https://www.plurai.ai/evals"
+  - "https://www.plurai.ai/pricing"
+  - "https://www.plurai.ai/about"
+  - "https://github.com/plurai-ai/intellagent"
+  - "https://arxiv.org/abs/2501.11067"
+  - "https://mp.weixin.qq.com/s/BaOVkKPtMwpDWlaoCYIFVw"
 tags: ["ai", "summary", "ai-products", "product-evaluation"]
 ---
 
@@ -55,6 +63,17 @@ AI 产品专栏默认用“子项条目”维护产品信息，而不是为每�
 - 适合场景：市场和销售材料、咨询式汇报、团队周报、分析报告、需要导出可编辑 PPT 的商务文档，以及不想在“聊天窗口”和“Office 编辑器”之间反复切换的知识工作者。
 - 风险：官网主打效果与体验，但企业级安全、权限、审计、系统集成和长期稳定性信息仍不够完整；价格、额度和功能边界可能继续变化；如果团队要求强模板治理、复杂协作审批或私有化部署，仍要先做小范围验证。
 - 来源：[Website](https://www.anygen.io/), [Slides](https://www.anygen.io/product/slides), [Docs](https://www.anygen.io/product/doc)
+
+## AI 编程与软件交付
+
+### Plurai
+
+- 分类：AI 编程与软件交付 / AI Agent 评测、仿真与 Guardrails / 生产上线治理
+- 定位：面向正在把 AI Agent 推向生产的团队，把仿真场景生成、评测、实时 guardrails 和持续优化整合成 trust platform。
+- 核心工作流：导入 PRD、政策、需求、历史对话等组织知识，自动构建知识图谱并合成多轮场景、persona、artifact 和工具 mock；用结构化实验在 UI 或 CI/CD 中回归测试 agent；为语义评测与 guardrail 训练专用 SLM/LLM 端点，用于生产监控、拦截和优化。
+- 适合场景：客服、销售、内部 copilot、RAG 助手、多步骤工具调用 agent 等需要高覆盖评测、合规/品牌/数据安全控制、低延迟实时防护，以及企业 VPC/on-prem 部署的场景。
+- 风险：官网披露的 15x、7x、>43%、<100ms 等指标需要结合具体业务验证；仿真质量依赖输入政策和场景建模；企业落地会涉及现有 agent 接口、RAG/数据库连接、数据权限、CI/CD 集成和评测标签治理。微信调研原文当前无法抓取，只能先以官网、论文和开源仓库交叉校验。
+- 来源：[Website](https://www.plurai.ai/), [Simulation](https://www.plurai.ai/simulation), [Evals & Guardrails](https://www.plurai.ai/evals), [Pricing](https://www.plurai.ai/pricing), [About](https://www.plurai.ai/about), [IntellAgent GitHub](https://github.com/plurai-ai/intellagent), [IntellAgent paper](https://arxiv.org/abs/2501.11067), [微信调研原文](https://mp.weixin.qq.com/s/BaOVkKPtMwpDWlaoCYIFVw)（当前抓取需验证）
 
 ## AI 设计与 Design-to-code
 

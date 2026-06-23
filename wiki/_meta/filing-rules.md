@@ -2,7 +2,7 @@
 type: "meta"
 status: "active"
 created: "2026-05-25"
-updated: "2026-06-09"
+updated: "2026-06-10"
 sources: []
 tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 ---
@@ -27,6 +27,7 @@ tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 - 领域优先使用这些目录名：`frontend-backend/` 表示前端、后端、全栈、基础设施和通用工程；`ai/` 表示 AI、Agent、LLM、模型、AI 产品、AI 工具和 AI 工程；`product/` 表示产品方法论、Product Sense、产品设计、用户研究、需求、增长和产品组织；未来出现稳定新领域时再按需新增。
 - 跨领域的学习资料入口、资源索引和导航页可以直接放在 `knowledge/` 下，不强行归入某个领域目录。
 - 内容形态不再生成目录；汇总、基础文档、技术专题、商业化等分组由 `index.md`、frontmatter `type` 和 tags 表达。
+- 例外：`knowledge/frontend-backend/后端知识点/` 是用户在 2026-06-10 明确要求新增的后端详细知识点子目录，用于承载从 `后端知识体系.md` 拆出的细粒度专题。该目录不代表恢复按内容形态分层；只作为后端总纲的专题扩展区维护。
 - 目录只表达主领域；frontmatter `type` 继续表达知识文件语义，例如 topic、pattern、playbook、decision、project、comparison、map、catalog。
 - `notes/` 只保留有真实记录的阅读笔记分类文件，不保留空占位文件。
 - `_raw/` 只在需要 provenance 时创建来源文件和语义子目录。
@@ -59,6 +60,7 @@ tags: ["wiki-maintenance", "taxonomy", "filing-rules"]
 - `knowledge/ai/AI工具.md`：AI 下重要工具、框架、CLI、库和资源项目的汇总和轻量条目。
 - `knowledge/frontend-backend/Docker基础语法.md`：前后端/全栈工程基础文档。
 - `knowledge/frontend-backend/后端知识体系.md`：前后端技术体系入口。
+- `knowledge/frontend-backend/后端知识点/认证授权与安全.md`：后端知识体系下的认证、授权与安全详细专题。
 - `knowledge/ai/Agent-Skill基础概念.md`：AI 工程基础概念。
 - `knowledge/ai/LLM维护Wiki.md`：AI 工程知识库维护模式。
 - `knowledge/product/产品Sense.md`：产品判断力与产品方法论专题。

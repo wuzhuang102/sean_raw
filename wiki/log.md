@@ -2,6 +2,36 @@
 
 ## 2026-06
 
+### 2026-06-23 | ingest | AI Agent 实战
+- raw: none
+- knowledge: `knowledge/ai/AI Agent实战.md`, `index.md`, `log.md`
+- notes: 按用户要求只开空文章，保留 frontmatter 和待补充占位，后续由用户补充正文。
+
+### 2026-06-22 | revise | AI 建站
+- raw: none
+- knowledge: `knowledge/ai/AI建站.md`, `notes/技术.md`, `index.md`, `log.md`
+- notes: 按用户要求将 AI 建站改归 `knowledge/ai/`；随后按“明确指令只做一件事”的规则，重写“网站审美”专项，补充 AI 生成代码常见蓝紫色风格成因；按腾讯云开发者社区文章原结构修正“去除 AI 味儿”小节，保留表现、成因和 7 类处理方法概要，资料链接作为独立一级标题维护。
+
+### 2026-06-17 | ingest | Product Hunt 调研
+- raw: `wiki/_raw/product/product-hunt-research-2026-06-17.md`
+- knowledge: `knowledge/product/Product Hunt调研.md`, `knowledge/product/产品Sense.md`, `index.md`, `log.md`
+- notes: 调研 Product Hunt 官方首页、About、Launch Guide、社区规则、llms.txt、公司背景报道和两篇使用 Product Hunt 数据的论文；沉淀为产品增长/发布渠道专题，覆盖平台机制、双边市场逻辑、launch 操作手册、信号价值、AI 时代可发现性和风险清单。
+
+### 2026-06-17 | reading-note | AI 产品调研：Plurai
+- raw: none
+- knowledge: `notes/产品.md`, `knowledge/ai/AI产品.md`, `index.md`, `log.md`
+- notes: 记录已读微信公众号链接；因微信页面当前返回验证页，正文待补充，同时基于 Plurai 官网、Simulation、Evals & Guardrails、Pricing、About、IntellAgent GitHub 和 arXiv 论文将 Plurai 轻量归入 AI 产品专栏。
+
+### 2026-06-11 | revise | 认证、授权与安全
+- raw: `wiki/_raw/backend/auth-authorization-security-research.md`
+- knowledge: `knowledge/frontend-backend/后端知识点/认证授权与安全.md`, `index.md`, `log.md`
+- notes: 补充 OAuth/OIDC 与 CAS 的定位、流程、凭证、适用场景和常见混淆，强调 CAS 偏 Web SSO、OAuth 偏授权委托、OIDC 偏身份认证与登录。
+
+### 2026-06-10 | ingest | 认证、授权与安全
+- raw: `wiki/_raw/backend/auth-authorization-security-research.md`
+- knowledge: `knowledge/frontend-backend/后端知识点/认证授权与安全.md`, `knowledge/frontend-backend/后端知识体系.md`, `_meta/filing-rules.md`, `index.md`, `log.md`
+- notes: 按用户要求在后端知识体系同级新增 `后端知识点/` 子目录，并沉淀认证、授权与安全详细专题；覆盖 Session/Cookie、JWT、OAuth/OIDC、API Key、mTLS、密码安全、RBAC/ABAC/ACL、多租户隔离、常见 Web/API 安全风险、审计与工程检查清单。
+
 ### 2026-06-09 | catalog | 技术学习资料
 - raw: none
 - knowledge: `knowledge/技术学习资料.md`, `_meta/filing-rules.md`, `index.md`, `log.md`

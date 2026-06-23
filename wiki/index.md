@@ -4,11 +4,13 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 
 ## 汇总
 
-- [AI 产品专栏](knowledge/ai/AI产品.md) - AI 下重要产品的轻量分类、产品分析、评价框架和后续拆页入口。
+- [AI 产品专栏](knowledge/ai/AI产品.md) - AI 下重要产品的轻量分类、产品分析、Agent 评测/治理平台、评价框架和后续拆页入口。
 - [AI 工具专栏](knowledge/ai/AI工具.md) - AI 下重要 tool 项目的轻量分类、工具条目、代码智能与检索工具、评价框架和后续拆页入口。
 
 ## 技术
 
+- [AI 建站](knowledge/ai/AI建站.md) - AI 辅助建站的长期入口；当前先沉淀网页设计专项，以及 AI 生成页面常见蓝紫色模板风的成因。
+- [AI Agent 实战](knowledge/ai/AI%20Agent实战.md) - AI Agent 实战文章草稿，待后续补充。
 - [Agent Skill 基础概念](knowledge/ai/Agent-Skill基础概念.md) - Agent skill 的组成、触发方式、适用边界和具体 skill 分类记录。
 - [Agent Sandbox](knowledge/ai/Agent%20Sandbox.md) - Agent 受控执行环境的概念边界、典型使用场景、工具版图和选型框架，预留后续实践追加入口。
 - [LLM-maintained wiki](knowledge/ai/LLM维护Wiki.md) - 用 LLM 增量维护持久 Markdown 知识库的架构、操作循环和实践边界。
@@ -27,6 +29,7 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 ## 技术
 
 - [后端知识体系](knowledge/frontend-backend/后端知识体系.md) - 后端技术栈能力地图，覆盖 API、数据库、事务、缓存、队列、安全、可观测性、部署、分布式和学习路径。
+- [认证、授权与安全](knowledge/frontend-backend/后端知识点/认证授权与安全.md) - 后端安全基础专题，覆盖认证方式、会话、JWT、OAuth/OIDC 与 CAS 对比、权限模型、多租户隔离、常见 Web/API 风险、审计和检查清单。
 
 # 产品
 
@@ -36,9 +39,13 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 - [判断力](knowledge/product/判断力.md) - 长期沉淀判断力的来源、校准、决策应用和后续案例，先保留为可追加草稿。
 - [产品 Sense](knowledge/product/产品Sense.md) - 产品判断力的形成机制、领域边界、用户接触方法、组织协作、社区争议和常见误区。
 
+## 商业化 / 增长
+
+- [Product Hunt 调研](knowledge/product/Product%20Hunt调研.md) - Product Hunt 作为科技产品发布、发现、早期反馈和社会证明平台的机制、使用手册、信号价值和局限。
+
 # 商业化
 
-当前还没有商业化知识文件。后续商业模式、行业分析、定价、增长、公司和产品商业化资料，优先按领域落到 `knowledge/<domain>/`，并在索引中按“商业化”分组。
+商业化、行业分析、定价、增长、公司和产品商业化资料优先按领域落到 `knowledge/<domain>/`，并在索引中按“商业化”分组。当前已有产品领域的 [Product Hunt 调研](knowledge/product/Product%20Hunt调研.md)。
 
 # Notes
 
@@ -54,7 +61,8 @@ This wiki is maintained by the `sean-llm-wiki` skill. It is a working engineerin
 
 - `knowledge/ai/`: AI、Agent、LLM、模型、AI 工具和 AI 工程。
 - `knowledge/frontend-backend/`: 前端、后端、全栈、基础设施和通用工程。
-- `knowledge/product/`: 产品方法论、Product Sense、产品设计、用户研究、需求、增长和产品组织。
+- `knowledge/frontend-backend/后端知识点/`: 后端知识体系拆出的详细知识点目录，用于承载比总纲更细的专题页面。
+- `knowledge/product/`: 产品方法论、Product Sense、产品设计、用户研究、需求、增长、产品组织和产品商业化。
 - `knowledge/技术学习资料.md`: 跨前后端、通用工程与 AI Agent 工程的学习资料入口。
 - 领域目录下直接放知识文件；不再按 `summaries/`、`fundamentals/`、`technology/`、`business/` 继续分层。
 - 跨领域资料导航页可以直接放在 `knowledge/` 顶层。
